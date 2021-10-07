@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+}
+
+movie-item {
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 8px 8px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  align-items: center;
+}
+
+movie-item:hover {
+  -webkit-transform: scale(2.1);
+  transform: scale(1.03);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.see-detail {
+  float: right;
+}
+
+header {
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/9b3267c9-5086-4550-92f1-eddc22a1f78e/28f3523f-350e-47d8-bd12-ed3627eb1ac3/ID-en-20211004-popsignuptwoweeks-perspective_alpha_website_medium.jpg) no-repeat center / cover;
+
+  width: 100%;
+  height: 111vh;
+  box-shadow: inset 10px 30px 100px #000000;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 111vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.horizontal-line {
+  border: 4px solid rgb(39, 39, 39);
+}
+
+.card-title {
+  font-size: 12px;
+}
+
+.card-subtitle {
+  font-size: 10px;
+}
+
+.see-detail {
+  font-size: 12px;
+}
+
+footer {
+  background: black;
+  padding-top: 5rem;
+  color: rgb(109, 109, 109);
+}
+
+@media (min-width: 992px) {
+  .jumbotron {
+    height: 340px;
+  }
+  .jumbotron .display-4 {
+    font-size: 62px;
+    margin-top: 10px;
+  }
+  .card-title {
+    font-size: 13px;
+  }
+  .card-subtitle {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-title {
+    font-size: 18px;
+  }
+  .card-subtitle {
+    font-size: 14px;
+  }
+  movie-item {
+    margin: auto 30px;
+    height: 40%;
+    width: auto;
+  }
+}
+@media (max-width: 548px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 935px) {
+  html {
+    font-size: 80%;
+  }
+}
